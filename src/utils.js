@@ -1,4 +1,4 @@
 // ----------------------------------------------------------------------------
 export const isRandomTrue = () => {
-  return Math.random() * 100 > 50;
+  return Math.random() > 0.5;
 };
