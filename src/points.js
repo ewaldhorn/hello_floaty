@@ -55,16 +55,9 @@ class Point {
     this.x = x;
     this.y = y;
 
-    this.xv = 1 + Math.floor(Math.random() * 2);
-    this.yv = 1 + Math.floor(Math.random() * 2);
-
-    if (isRandomTrue()) {
-      this.xv *= -1;
-    }
-
-    if (isRandomTrue()) {
-      this.yv *= -1;
-    }
+    const speed = 1 + Math.floor(Math.random() * 2);
+    this.xv = isRandomTrue() ? -speed : speed;
+    this.yv = isRandomTrue() ? -speed : speed;
   }
 
   // --------------------------------------------------------------------------
