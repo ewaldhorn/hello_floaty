@@ -1,2 +1,4 @@
-# hello_floaty
-Trying out Floaty.dev
+# Hello Floaty
+Trying out <https://floaty.dev/>
+
+![screenshot.png](./screenshot.png)
