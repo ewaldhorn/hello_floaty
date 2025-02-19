@@ -17,9 +17,7 @@ export class Points {
 
   // --------------------------------------------------------------------------
   update() {
-    for (var point of this.points) {
-      point.update();
-    }
+    this.points.forEach((point) => point.update());
   }
 
   // --------------------------------------------------------------------------
