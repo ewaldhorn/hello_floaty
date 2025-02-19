@@ -9,8 +9,8 @@ export class Points {
     this.points = Array(this.limit)
       .fill()
       .map(() => {
-        const x = 3 + Math.floor(rnd(122));
-        const y = 3 + Math.floor(rnd(122));
+        const x = 3 + Math.floor(rnd(124));
+        const y = 3 + Math.floor(rnd(124));
         return new Point({ x, y });
       });
   }
@@ -50,7 +50,7 @@ class Point {
     this.x = x;
     this.y = y;
 
-    const speed = 1 + Math.floor(Math.random() * 2);
+    const speed = 1 + Math.trunc(Math.random() * 2);
     this.xv = isRandomTrue() ? -speed : speed;
     this.yv = isRandomTrue() ? -speed : speed;
   }
