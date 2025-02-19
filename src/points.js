@@ -6,16 +6,13 @@ export class Points {
 
   // --------------------------------------------------------------------------
   init() {
-    this.points = [];
-
-    for (var i = 0; i < this.limit; i++) {
-      this.points.push(
-        new Point({
-          x: 3 + Math.floor(rnd(120)),
-          y: 3 + Math.floor(rnd(120)),
-        }),
-      );
-    }
+    this.points = Array(this.limit)
+      .fill()
+      .map(() => {
+        const x = 3 + Math.floor(rnd(122));
+        const y = 3 + Math.floor(rnd(122));
+        return new Point({ x, y });
+      });
   }
 
   // --------------------------------------------------------------------------
